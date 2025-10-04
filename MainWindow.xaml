@@ -1,0 +1,70 @@
+﻿<Window x:Class="GraMemory.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GraMemory"
+        mc:Ignorable="d"
+        Title="Gra Memory" Height="620" Width="560">
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top">
+            <StackPanel DockPanel.Dock="Left" Orientation="Horizontal">
+                <Label  Width="100" FontSize="20" x:Name="lbl_czas" Content="⏱ 00:00"></Label>
+                <Label Width="100" FontSize="20" x:Name="lbl_ilosc_kart" Content="🔼 0"></Label>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Margin="0 2 5 0" Padding="20 0" Background="LightBlue" FontSize="20" x:Name="btn_resetuj" Click="btn_reset" Width="132">Resetuj</Button>
+            </StackPanel>
+        </DockPanel>
+        <UniformGrid>
+            <Button Margin="5" Click="Karta0">
+                <Image x:Name="obr0"></Image>
+            </Button>
+            <Button Margin="5" Click="Karta1">
+                <Image x:Name="obr1"></Image>
+            </Button>
+            <Button Margin="5" Click="Karta2">
+                <Image x:Name="obr2"></Image>
+            </Button>
+            <Button Margin="5" Click="Karta3">
+                <Image x:Name="obr3"></Image>
+            </Button>
+            <Button Margin="5" Click="Karta4">
+                <Image x:Name="obr4"></Image>
+            </Button>
+            <Button Margin="5" Click="Karta5">
+                <Image x:Name="obr5"></Image>
+            </Button>
+            <Button Margin="5" Click="Karta6">
+                <Image x:Name="obr6"></Image>
+            </Button>
+            <Button Margin="5" Click="Karta7">
+                <Image x:Name="obr7"></Image>
+            </Button>
+            <Button Margin="5" Click="Karta8">
+                <Image x:Name="obr8"></Image>
+            </Button>
+            <Button Margin="5" Click="Karta9">
+                <Image x:Name="obr9"></Image>
+            </Button>
+            <Button Margin="5" Click="Karta10">
+                <Image x:Name="obr10"></Image>
+            </Button>
+            <Button Margin="5" Click="Karta11">
+                <Image x:Name="obr11"></Image>
+            </Button>
+            <Button Margin="5" Click="Karta12">
+                <Image x:Name="obr12"></Image>
+            </Button>
+            <Button Margin="5" Click="Karta13">
+                <Image x:Name="obr13"></Image>
+            </Button>
+            <Button Margin="5" Click="Karta14">
+                <Image x:Name="obr14"></Image>
+            </Button>
+            <Button Margin="5" Click="Karta15">
+                <Image x:Name="obr15"></Image>
+            </Button>
+        </UniformGrid>
+    </DockPanel>
+</Window>
